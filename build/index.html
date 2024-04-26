@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan Thiong'o</title>
+    <title>Dan Thiong'o</title>    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>              
+            </ul>
+            <ul>
+              <li class="h1"><a href="#">Dan</a></li>
+              <li class="nav_bar"><a href="#about">About</a></li>
+              <li class="nav_bar"><a href="#project">Projects</a></li>
+              <li class="nav_bar"><a href="#contact">Contact</a></li>              
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+        
+    </header>
+    <main>
+        <section id="hero" class="section__hero">
+            <article class="section__article">
+                <h2>Hello,</h2>
+                <h2>I'm Dan Thiong'o</h2>
+                <p>
+                    I'm an aspiring web developer
+                </p>
+            </article>
+            
+        </section>
+        <section id="about">
+            <article>
+                <h2>About me</h2>
+                <p>
+
+                </p>
+            </article>
+
+        </section>
+        <section id="projects">
+
+        </section>
+        <section id="contact">
+
+        </section>
+    </main>
+    <footer id="socials">
+
+    </footer>
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
     
 </body>
 </html>
