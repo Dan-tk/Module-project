@@ -110,6 +110,7 @@ nav li:first-child{
 .section__about{
     height: 100vh;
     margin-left: 25px;
+    display: flex;
    
 }
 .about__text{
@@ -117,11 +118,19 @@ nav li:first-child{
     font-weight: 600;
     margin: 15px 0 30px;
 }
-
+.about__images img{
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 10px;
+}
 
 .section__projects{
     height: 100vh;
     margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
